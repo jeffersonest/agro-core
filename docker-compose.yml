@@ -1,14 +1,29 @@
-version: '3.9'
+version: '3.8'
 
 services:
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: aggro3
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   backend:
     build:
       context: ./backend
-      dockerfile: Dockerfile
-    env_file:
-      - ./backend/.env
-    volumes:
-      - ./backend:/app
+    restart: always
+    environment:
+      JWT_SECRET: secret0123
+      DB_USERNAME: root
+      DB_PASSWORD: admin
+      DB_DATABASE: aggro3
+      BCRYPT_SALT: 64
+      PORT: 4000
     ports:
       - "4000:4000"
     depends_on:
@@ -17,26 +32,13 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile
-    env_file:
-      - ./frontend/.env
-    volumes:
-      - ./frontend:/app
+    restart: always
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:4000/api
     ports:
       - "3000:3000"
     depends_on:
       - backend
-
-  db:
-    image: postgres:13
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: aggro3
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
 
 volumes:
   postgres_data:

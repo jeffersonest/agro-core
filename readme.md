@@ -16,7 +16,9 @@ git clone https://github.com/jeffersonest/agro-front.git frontend
 git clone https://github.com/jeffersonest/agro-challenge.git backend
 ```
 
-### 2. Para executar, entre no diretório agro-core e use:
+### 2. Para executar
+
+Entre no diretório agro-core e use o comando:
 
 ```sh
 docker-compose up --build

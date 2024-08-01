@@ -19,7 +19,7 @@ git clone https://github.com/jeffersonest/agro-challenge.git backend
 
 ### 2. Para executar
 
-Entre no diretório `agro-core` e use o comando:
+Entre no diretório `agro-core` e use o comando no terminal:
 
 ```sh
 docker-compose up --build

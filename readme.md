@@ -3,7 +3,7 @@
 ## Descrição
 
 Este projeto consiste em três repositórios: `agro-front` (frontend) e `agro-backend` (backend) integrados e executados em containers Docker dentro do diretório `agro-core`.
-Em cumprimento do desafio: `https://github.com/brain-ag/trabalhe-conosco`
+Em cumprimento do desafio: `https://github.com/brain-ag/trabalhe-conosco`. Obs: Necessário ter o [Docker]([https://github.com/jeffersonest/agro-core](https://docs.docker.com/engine/install/)) instalado
 
 
 ## Passos para Executar o Projeto

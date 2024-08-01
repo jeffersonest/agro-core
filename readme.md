@@ -4,8 +4,6 @@
 
 Este projeto consiste em dois repositórios: `agro-front` (frontend) e `agro-challenge` (backend), integrados e executados em containers Docker.
 
---
-
 
 ## Passos para Executar o Projeto
 

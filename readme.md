@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto consiste em dois repositórios: `agro-front` (frontend) e `agro-challenge` (backend), integrados e executados em containers Docker dentro do diretório agro-core.
+Este projeto consiste em dois repositórios: `agro-front` (frontend) e `agro-backend` (backend), integrados e executados em containers Docker dentro do diretório agro-core.
 
 
 ## Passos para Executar o Projeto

@@ -2,7 +2,8 @@
 
 ## Descrição
 
-Este projeto consiste em dois repositórios: `agro-front` (frontend) e `agro-backend` (backend), integrados e executados em containers Docker dentro do diretório `agro-core`.
+Este projeto consiste em três repositórios: `agro-front` (frontend) e `agro-backend` (backend) integrados e executados em containers Docker dentro do diretório `agro-core`.
+Em cumprimento do desafio: `https://github.com/brain-ag/trabalhe-conosco`
 
 
 ## Passos para Executar o Projeto
@@ -23,3 +24,12 @@ Entre no diretório `agro-core` e use o comando:
 ```sh
 docker-compose up --build
 ```
+
+### 3. Para Acessar
+
+ `Frontend` Disponível em: http://localhost:3000
+ 
+ `Backend` Disponível em: http://localhost:4000/api
+ 
+ `Swagger` Disponível em: http://localhost:4000/api-docs
+
